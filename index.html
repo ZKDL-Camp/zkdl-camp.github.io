@@ -3,6 +3,9 @@
 <!-- Including emoji support -->
 <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
 
+<!-- Including Lexend font -->
+<link href='https://fonts.googleapis.com/css?family=Lexend' rel='stylesheet'>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -12,10 +15,67 @@
         <meta name="description" content="Internal Lectures on Zero-Knowledge Proving Systems conducted internally at Distributed Lab">
         <meta name=”robots” content="index, follow">
         <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🧑‍💻</text></svg>">
-        <!-- <link rel="stylesheet" href="styles/main/main.css"> -->
+        <link rel="stylesheet" href="styles/main/main.css">
     </head>
     <body>
-        <h1> ZKDL Camp </h1>
+        <!-- ZKDL Header -->
+        <div class="title-block">
+            <h1 class="title-text"> ZKDL <br/> Camp </h1>
+        </div>
+
+        <!-- About Section -->
+        <div class="about-block">
+            <h1 class="section-header"> About </h1>
+            <p> 
+                <b>ZKDL Camp</b> is a series of internal lectures on Zero-Knowledge Proving Systems conducted internally at <a href = "https://distributedlab.com/" class="blue">Distributed Lab</a>. Here, we will understand "from scratch" how SNARKs (<i>Groth16</i>, <i>PLONK</i>), <i>STARK</i>, <i>Bulletproofs</i> (in the future, perhaps also Folding schemes) work.
+            </p>
+            <p>
+                It is important that this course is designed for a full low-level understanding of these protocols and, accordingly, all the mathematics on which they are based. That is why the course covers not only zk itself and its application directly but also the basic level of mathematics needed to understand zk and cryptography in general.
+            </p>
+        </div>
+
+        <!-- Lectures Section -->
+        <div class="lectures-block">
+            <h1 class="section-header"> Lectures </h1>
+            <div class="lecture">
+                <h2 class="lecture-header"> Lecture 1: Mathematics for Cryptographers I </h2>
+                <p class="lecture-description">
+                    <strong>Content.</strong> In this lecture, we will cover the basic mathematics required for understanding Zero-Knowledge Proving Systems. Here, we cover:
+                    <ul>
+                        <li> Basic Mathematics Notation </li>
+                        <li> Rigorously Formulating Statements in Mathematics </li>
+                        <li> Basic Set Theory and Logic </li>
+                        <li> Basic Group Theory </li>
+                    </ul>
+                </p>
+                <div class="lecture-links">
+                    <a href="files/lectures/lecture-1.pdf"> Lecture Notes </a>
+                    <a href="#"> Slides </a>
+                    <a href="files/exercises/lecture-1.pdf"> Exercises </a>
+                    <a href="#"> Recording (in Ukrainian) </a>
+                </div>
+            </div>
+
+            <div class="lecture">
+                <h2 class="lecture-header"> Lecture 2: Mathematics for Cryptographers II </h2>
+                <p class="lecture-description">
+                    <strong>Content.</strong> In this lecture, we will continue covering the basic mathematics used in cryptography. Here, we cover:
+                    <ul>
+                        <li> Basic Security Definitions </li>
+                        <li> Polynomials </li>
+                        <li> Lagrange Interpolation: Shamir's Secret Sharing and Reed-Solomon Codes </li>
+                        <li> Schwarz-Zippel Lemma </li>
+                        <li> Number Theory leftaways </li>
+                    </ul>
+                </p>
+                <div class="lecture-links">
+                    <a href="#"> Lecture Notes </a>
+                    <a href="#"> Slides </a>
+                    <a href="#"> Exercises </a>
+                    <a href="#"> Recording (in Ukrainian) </a>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
 

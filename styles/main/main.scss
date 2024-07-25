@@ -1,0 +1,72 @@
+@import url("../common/common.css");
+
+// Title block
+.title-block {
+    background-image: var(--title-background-gradient);
+
+    .title-text {
+        font-size: 4em;
+        text-align: center;
+        background: var(--title-font-gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 3.5px;
+        -webkit-text-stroke-color: black;
+    }
+}
+
+// About me section
+.section-header {
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 4px solid var(--darker-background-color);
+    background: var(--header-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+// About body
+.about-block {
+    margin: 0 20% 0 20%;
+    font-size: 1.2em;
+
+    p {
+        padding: 0;
+        margin: 20px;
+        text-indent: 25px;
+    }
+}
+
+// Lectures section
+.lectures-block {
+    margin: 0 20% 0 20%;
+    font-size: 1.2em;
+
+    .lecture {
+        background: white;
+        border-radius: 1em;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        margin: 20px;
+
+        .lecture-header {
+            font-size: 1.5em;
+            text-align: center;
+            background: var(--table-color-gradient);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .lecture-body {
+            margin: 0 10% 0 10%;
+            padding: 10px;
+            border: 2px solid var(--darker-background-color);
+            border-radius: 10px;
+            background: var(--dark-gradient);
+            color: var(--black-text-color);
+        }
+    }
+}

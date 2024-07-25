@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+:root {
+  --background-color: #ffffff;
+  --darker-background-color: #dfe4ea;
+  --slightly-darker-background-color: #f1f2f6;
+  --neutral-text-color: #57606f;
+  --black-text-color: #2f3542;
+  --dark-background-color: #57606f;
+  --main-color: #70a1ff;
+  --darker-main-color: #1e90ff;
+  --link-color: #70a1ff;
+  --selected-link-color: #1e90ff;
+  --accent-color: #ff4757;
+  --title-font-gradient: linear-gradient(180deg, #12C2E9, #C471ED, #F64F59);
+  --title-background-gradient: linear-gradient(to right, #70E1F5, #FFD194);
+  --table-color-gradient: linear-gradient(to right, #4776E6, #8E54E9);
+  --header-gradient: linear-gradient(to right, #232526, #414345);
+  --dark-gradient: linear-gradient(to right, #005C97, #363795);
+  --bright-header: linear-gradient(to right, #12C2E9, #C471ED, #F0C044);
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+body {
+  background: var(--background-color);
+  margin: 0;
+  font-family: "Poppins";
+  color: var(--black-text-color);
+  animation: transitionIn 750ms;
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+  font-weight: bolder;
+  transition-duration: 450ms;
+  transition-timing-function: ease;
+}
+a:hover {
+  color: var(--black-text-color);
+}/*# sourceMappingURL=common.css.map */
