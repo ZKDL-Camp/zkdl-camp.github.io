@@ -37,6 +37,10 @@ body {
   animation: transitionIn 750ms;
 }
 
+ul {
+  margin-top: 3px;
+}
+
 a {
   text-decoration: none;
   color: var(--link-color);

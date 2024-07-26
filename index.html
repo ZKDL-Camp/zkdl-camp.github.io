@@ -38,89 +38,123 @@
         <div class="lectures-block">
             <h1 class="section-header"> Lectures </h1>
 
-            <table class="lecture-table">
-                <colgroup class="lecture-colgroup">
-                    <col span="1" class="img-col">
-                    <col span="1" class="description-col">
-                 </colgroup>
+            <!-- Lecture 1 -->
+            <div class="lecture-card">
+                <div class="lecture-card-head">
+                    <div class="lecture-card-preview">
+                        <img src="images/lecture-previews/lecture_1.png" class="preview">
+                    </div>
+                    <div class="lecture-card-content">
+                        <div class="lecture-card-header">
+                            <h2 class="lecture-card-title"> Lecture 1: Mathematics for Cryptographers I </h2>
+                            <p class="lecture-card-speaker"> <strong>Speaker:</strong> Dmytro Zakharov </p>
+                        </div>
 
-                <tbody>
-                    <tr class="image-row">
-                        <td rowspan="4" class="preview-cell"> 
-                            <img src="images/lecture-previews/lecture_1.png" class="preview" id="crosschain-image">
-                        </td>
-                        <td class="title">
-                            Lecture 1: Mathematics for Cryptographers I
-                        </td>
-                    </tr>
-                    <tr class="speaker-row">
-                        <td class="speakers-cell">
-                            <strong>Speaker:</strong> Dmytro Zakharov
-                        </td>
-                    </tr>
-                    <tr class="description-row">
-                        <td class="description-cell">
-                            <strong>Content.</strong> In this lecture, we will cover the basic mathematics required for understanding Zero-Knowledge Proving Systems. Here, we cover:
-                            <ul>
-                                <li> Basic Set Theory and Logic </li>
-                                <li> Basic Group Theory </li>
-                                <li> Fields. Finite Field Arithmetic. </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr class="links-row">
-                        <td class="links-cell">
-                            [<a href="#" class="paper-link"> Lecture Notes </a>]
-                            [<a href="#" class="paper-link"> Slides </a>]
-                            [<a href="#" class="paper-link"> Exercises </a>]
-                            [<a href="#" class="paper-link"> Recording(in Ukrainian) </a>]
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                        <div class="lecture-card-content">
+                            <p class="lecture-card-description"> 
+                                <strong>Content.</strong> In this lecture, we will cover the basic mathematics required for understanding Zero-Knowledge Proving Systems. Here, we cover:
+                                <ul class="lecture-card-list">
+                                    <li> Basic Set Theory and Logic </li>
+                                    <li> Basic Group Theory </li>
+                                    <li> Fields. Finite Field Arithmetic. </li>
+                                </ul>
+                            </p>
+                        </div>    
+                    </div>
+                </div>
 
-            <table class="lecture-table">
-                <colgroup class="lecture-colgroup">
-                    <col span="1" class="img-col">
-                    <col span="1" class="description-col">
-                 </colgroup>
+                <div class="lecture-links-section">
+                    <h1 class="lecture-links-header"> <strong> Lecture Material: </strong> </h1>
 
-                <tbody>
-                    <tr class="image-row">
-                        <td rowspan="4" class="preview-cell"> 
-                            <img src="images/lecture-previews/lecture_2.png" class="preview" id="crosschain-image">
-                        </td>
-                        <td class="title">
-                            Lecture 2: Mathematics for Cryptographers II
-                        </td>
-                    </tr>
-                    <tr class="speaker-row">
-                        <td class="speakers-cell">
-                            <strong>Speaker:</strong> Dmytro Zakharov and Denys Riabtsev
-                        </td>
-                    </tr>
-                    <tr class="description-row">
-                        <td class="description-cell">
-                            <strong>Content.</strong> In this lecture, we will continue covering the basic mathematics used in cryptography. Here, we cover: 
-                            <ul>
-                                <li> Basic Security Definitions  </li>
-                                <li> Polynomials </li>
-                                <li> Lagrange Interpolation: Shamir's Secret Sharing and Reed-Solomon Codes  </li>
-                                <li> Schwarz-Zippel Lemma </li>
-                                <li> Number Theory </li>
-                            </ul>
-                        </td>
-                    </tr>
-                    <tr class="links-row">
-                        <td class="links-cell">
-                            [<a href="#" class="paper-link"> Lecture Notes </a>]
-                            [<a href="#" class="paper-link"> Slides </a>]
-                            [<a href="#" class="paper-link"> Exercises </a>]
-                            [<a href="#" class="paper-link"> Recording(in Ukrainian) </a>]
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+                    <div class="lecture-links-list">
+                        <a href="files/notes/1-math.pdf" class="lecture-link">
+                            <img src="images/icons/lecture_notes_icon.png">
+                            <p class="link-name"> Lecture Notes </p>
+                        </a>
+
+                        <a href="files/slides/1-math.pdf" class="lecture-link">
+                            <img src="images/icons/slides_icon.png">
+                            <p class="link-name"> Slides </p>
+                        </a>
+
+                        <a href="files/exercises/1-math.pdf" class="lecture-link">
+                            <img src="images/icons/test.png">
+                            <p class="link-name"> Exercises </p>
+                        </a>
+
+                        <a href="https://forms.gle/phHTR7YcYVUUchpF8" class="lecture-link">
+                            <img src="images/icons/google_form.png">
+                            <p class="link-name"> Test Form </p>
+                        </a>
+                    </div>
+
+                    <h1 class="lecture-links-header"> <strong> Other Helpful Resources: </strong> </h1>
+                    <ul>
+                        <li> <a href="https://www.youtube.com/watch?v=j5nkkCp0ARw&list=PLVMgvCDIRy1y4JFpnpzEQZ0gRwr-sPTpw"> Michael Penn's "Abstract Algebra" Youtube Course </a>: one of the best explanations of Algebra I have seen with tons of examples. </li>
+                        <li> <a href="https://ocw.mit.edu/courses/18-703-modern-algebra-spring-2013/"> MIT Modern Algebra Class (18.703) </a>: Quite a rigorous course in Algebra, yet still easy-to-follow. </li>
+                        <li> <a href="https://www.youtube.com/watch?v=UwTQdOop-nU&list=PLwV-9DG53NDxU337smpTwm6sef4x-SCLv"> Visual Group Theory </a>: Very comprehensive list of lectures on Group Theory and Galois Theory with illustrations and many examples. </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Lecture 2 -->
+            <div class="lecture-card">
+                <div class="lecture-card-head">
+                    <div class="lecture-card-preview">
+                        <img src="images/lecture-previews/lecture_2.png" class="preview">
+                    </div>
+                    <div class="lecture-card-content">
+                        <div class="lecture-card-header">
+                            <h2 class="lecture-card-title"> Lecture 2: Mathematics for Cryptographers II </h2>
+                            <p class="lecture-card-speaker"> <strong>Speakers:</strong> Dmytro Zakharov and Denis Riabtsev </p>
+                        </div>
+
+                        <div class="lecture-card-content">
+                            <p class="lecture-card-description"> 
+                                <strong>Content.</strong> In this lecture, we will continue covering the basic mathematics used in cryptography. Here, we cover: 
+                                <ul>
+                                    <li> Basic Security Definitions  </li>
+                                    <li> Polynomials </li>
+                                    <li> Lagrange Interpolation: Shamir's Secret Sharing and Reed-Solomon Codes  </li>
+                                    <li> Schwarz-Zippel Lemma </li>
+                                    <li> Number Theory </li>
+                                </ul>
+                            </p>
+                        </div>    
+                    </div>
+                </div>
+
+                <div class="lecture-links-section">
+                    <h1 class="lecture-links-header"> <strong> Lecture Material: </strong> </h1>
+
+                    <div class="lecture-links-list">
+                        <a href="files/notes/2-math-and-crypto.pdf" class="lecture-link">
+                            <img src="images/icons/lecture_notes_icon.png">
+                            <p class="link-name"> Lecture Notes </p>
+                        </a>
+
+                        <a href="files/slides/2-math-and-crypto.pdf" class="lecture-link">
+                            <img src="images/icons/slides_icon.png">
+                            <p class="link-name"> Slides </p>
+                        </a>
+
+                        <a href="files/exercises/2-math-and-crypto.pdf" class="lecture-link">
+                            <img src="images/icons/test.png">
+                            <p class="link-name"> Exercises </p>
+                        </a>
+
+                        <a href="https://forms.gle/cvXfeSQzo1Au3x567" class="lecture-link">
+                            <img src="images/icons/google_form.png">
+                            <p class="link-name"> Test Form </p>
+                        </a>
+                    </div>
+
+                    <h1 class="lecture-links-header"> <strong> Other Helpful Resources: </strong> </h1>
+                    <ul>
+                        <li> <a href="https://doi.org/10.1137%2F0108018"> Reed, Irving S.; Solomon, Gustave (1960), Polynomial Codes over Certain Finite Fields </a>: Original Paper on Reed-Solomon Error Correction</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </body>
 </html>
