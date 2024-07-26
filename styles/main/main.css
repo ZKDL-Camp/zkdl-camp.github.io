@@ -11,6 +11,14 @@
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 3.5px;
   -webkit-text-stroke-color: black;
+  margin: 0;
+}
+.title-block .subtitle-text {
+  font-size: 1.2em;
+  color: var(--neutral-text-color);
+  text-align: center;
+  padding: 0;
+  margin: 0;
 }
 
 .section-header {
@@ -37,26 +45,42 @@
   margin: 0 20% 0 20%;
   font-size: 1.2em;
 }
-.lectures-block .lecture {
+.lectures-block .lecture-table {
+  width: 100%;
   background: white;
   border-radius: 1em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin: 20px;
 }
-.lectures-block .lecture .lecture-header {
-  font-size: 1.5em;
-  text-align: center;
+.lectures-block .lecture-table .lecture-colgroup .img-col {
+  width: 30%;
+}
+.lectures-block .lecture-table .lecture-colgroup .description-col {
+  width: 70%;
+}
+.lectures-block .lecture-table .image-row .preview-cell .preview {
+  display: block;
+  width: 95%;
+  height: 95%;
+}
+.lectures-block .lecture-table .image-row .title {
   background: var(--table-color-gradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 0;
+  vertical-align: bottom;
 }
-.lectures-block .lecture .lecture-body {
-  margin: 0 10% 0 10%;
-  padding: 10px;
-  border: 2px solid var(--darker-background-color);
-  border-radius: 10px;
-  background: var(--dark-gradient);
-  color: var(--black-text-color);
+.lectures-block .lecture-table .speaker-row .speakers-cell {
+  vertical-align: top;
+}
+.lectures-block .lecture-table .description-row .description-cell {
+  vertical-align: bottom;
+}
+.lectures-block .lecture-table .links-row .links-cell {
+  font-size: 1.2em;
+  font-family: monospace;
+  vertical-align: top;
 }/*# sourceMappingURL=main.css.map */

@@ -13,6 +13,15 @@
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 3.5px;
         -webkit-text-stroke-color: black;
+        margin: 0;
+    }
+
+    .subtitle-text {
+        font-size: 1.2em;
+        color: var(--neutral-text-color);
+        text-align: center;
+        padding: 0;
+        margin: 0;
     }
 }
 
@@ -44,29 +53,60 @@
     margin: 0 20% 0 20%;
     font-size: 1.2em;
 
-    .lecture {
+    .lecture-table {
+        width: 100%;
+
         background: white;
         border-radius: 1em;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         padding: 20px;
-        margin: 20px;
 
-        .lecture-header {
-            font-size: 1.5em;
-            text-align: center;
-            background: var(--table-color-gradient);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .lecture-colgroup { 
+            .img-col {
+                width: 30%;
+            }
+            .description-col {
+                width: 70%;
+            }
         }
 
-        .lecture-body {
-            margin: 0 10% 0 10%;
-            padding: 10px;
-            border: 2px solid var(--darker-background-color);
-            border-radius: 10px;
-            background: var(--dark-gradient);
-            color: var(--black-text-color);
+        .image-row {
+            .preview-cell {
+                .preview {
+                    display: block;
+                    width: 95%;
+                    height: 95%;
+                }
+            }
+
+            .title {
+                background: var(--table-color-gradient);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                font-weight: bold;
+                font-size: 1.2em;
+                margin: 0;
+                vertical-align: bottom;
+            }
+        }
+
+        .speaker-row {
+            .speakers-cell {
+                vertical-align: top;
+            }
+        }
+        .description-row {
+            .description-cell {
+                vertical-align: bottom;
+            }
+        }
+        .links-row {
+            .links-cell {
+                font-size: 1.2em;
+                font-family: monospace;
+                vertical-align: top;
+            }
         }
     }
 }
