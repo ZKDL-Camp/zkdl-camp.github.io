@@ -2,8 +2,10 @@
 
 // Title block
 .title-block {
+    // Gradient background
     background-image: var(--title-background-gradient);
 
+    // Title styled with another gradient
     .title-text {
         font-size: 4em;
         text-align: center;
@@ -15,17 +17,9 @@
         -webkit-text-stroke-color: black;
         margin: 0;
     }
-
-    .subtitle-text {
-        font-size: 1.2em;
-        color: var(--neutral-text-color);
-        text-align: center;
-        padding: 0;
-        margin: 0;
-    }
 }
 
-// About me section
+// Section headers
 .section-header {
     font-size: 2em;
     text-align: center;
@@ -40,6 +34,7 @@
 .about-block {
     margin: 0 20% 0 20%;
     font-size: 1.2em;
+    text-align: justify;
 
     p {
         padding: 0;
@@ -54,7 +49,6 @@
     font-size: 1.2em;
 
     .lecture-card {
-        width: 100%;
         background: white;
         border-radius: 1em;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -78,6 +72,8 @@
             }
 
             .lecture-card-content {
+                text-align: justify;
+
                 .lecture-card-header {
                     .lecture-card-title {
                         background: var(--table-color-gradient);
@@ -146,5 +142,40 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    body {
+        font-size: 80%;
+    }
+
+    .lectures-block {
+        .lecture-card {
+            .lecture-card-head {
+                // Making image position default
+                display: block;
+
+                .lecture-card-preview {
+                    // Here, we set the image in the middle of the div
+                    position: static; 
+    
+                    img {
+                        position: static;
+                        // Making image in the center
+                        display:block;
+                        margin-left:auto;
+                        margin-right:auto;
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        font-size: 70%;
     }
 }

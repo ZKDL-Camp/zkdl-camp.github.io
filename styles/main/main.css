@@ -13,13 +13,6 @@
   -webkit-text-stroke-color: black;
   margin: 0;
 }
-.title-block .subtitle-text {
-  font-size: 1.2em;
-  color: var(--neutral-text-color);
-  text-align: center;
-  padding: 0;
-  margin: 0;
-}
 
 .section-header {
   font-size: 2em;
@@ -34,6 +27,7 @@
 .about-block {
   margin: 0 20% 0 20%;
   font-size: 1.2em;
+  text-align: justify;
 }
 .about-block p {
   padding: 0;
@@ -46,7 +40,6 @@
   font-size: 1.2em;
 }
 .lectures-block .lecture-card {
-  width: 100%;
   background: white;
   border-radius: 1em;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -68,6 +61,9 @@
   top: 0;
   bottom: 0;
   margin: auto;
+}
+.lectures-block .lecture-card .lecture-card-head .lecture-card-content {
+  text-align: justify;
 }
 .lectures-block .lecture-card .lecture-card-head .lecture-card-content .lecture-card-header .lecture-card-title {
   background: var(--table-color-gradient);
@@ -122,4 +118,28 @@
 .lectures-block .lecture-card .lecture-links-section .lecture-links-list .lecture-link:hover {
   background-color: var(--darker-background-color);
   color: black;
+}
+
+@media only screen and (max-width: 950px) {
+  body {
+    font-size: 80%;
+  }
+  .lectures-block .lecture-card .lecture-card-head {
+    display: block;
+  }
+  .lectures-block .lecture-card .lecture-card-head .lecture-card-preview {
+    position: static;
+  }
+  .lectures-block .lecture-card .lecture-card-head .lecture-card-preview img {
+    position: static;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    font-size: 70%;
+  }
 }/*# sourceMappingURL=main.css.map */
