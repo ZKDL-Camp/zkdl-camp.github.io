@@ -50,4 +50,14 @@ a {
 }
 a:hover {
   color: var(--black-text-color);
+}
+
+footer {
+  width: 100%;
+}
+
+p.copyright {
+  width: 100%;
+  color: gray;
+  text-align: center;
 }/*# sourceMappingURL=common.css.map */
