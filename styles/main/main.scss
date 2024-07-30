@@ -146,14 +146,30 @@
 }
 
 @media only screen and (max-width: 950px) {
+    // Decreasing the font size
     body {
         font-size: 80%;
     }
 
+    // Title block
+    .title-block {
+        .title-text {
+            -webkit-text-stroke-width: 2.5px; // Making the stroke smaller
+        }
+    }
+
+    // About Section
+    .about-block {
+        margin: 0 10% 0 10%; // Making margin smaller
+    }
+
+    // Lecture Section
     .lectures-block {
+         margin: 0 10% 0 10%; // Making margin smaller
+
         .lecture-card {
             .lecture-card-head {
-                // Making image position default
+                // Making image position default (not next to the paragraph)
                 display: block;
 
                 .lecture-card-preview {
@@ -175,7 +191,25 @@
 }
 
 @media only screen and (max-width: 500px) {
+    // Title block
+    .title-block {
+        .title-text {
+            -webkit-text-stroke-width: 2px; // Making the stroke smaller
+        }
+    }
+
+    // Decreasing the font size even more
     body {
         font-size: 70%;
+    }
+
+    // About Section
+    .about-block {
+        margin: 0 5% 0 5%; // Making margin smaller
+    }
+
+    // Lectures Section
+    .lectures-block {
+        margin: 0 5% 0 5%; // Making margin even smaller
     }
 }

@@ -124,6 +124,15 @@
   body {
     font-size: 80%;
   }
+  .title-block .title-text {
+    -webkit-text-stroke-width: 2.5px;
+  }
+  .about-block {
+    margin: 0 10% 0 10%;
+  }
+  .lectures-block {
+    margin: 0 10% 0 10%;
+  }
   .lectures-block .lecture-card .lecture-card-head {
     display: block;
   }
@@ -139,7 +148,16 @@
   }
 }
 @media only screen and (max-width: 500px) {
+  .title-block .title-text {
+    -webkit-text-stroke-width: 2px;
+  }
   body {
     font-size: 70%;
+  }
+  .about-block {
+    margin: 0 5% 0 5%;
+  }
+  .lectures-block {
+    margin: 0 5% 0 5%;
   }
 }/*# sourceMappingURL=main.css.map */
