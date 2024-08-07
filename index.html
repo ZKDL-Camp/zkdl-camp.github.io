@@ -16,7 +16,7 @@
 
         <!-- HTML Meta Tags -->
         <link rel="canonical" href="https://zkdl-camp.github.io/">
-        <meta name="description" content="Internal Lectures on Zero-Knowledge Proving Systems conducted internally at Distributed Lab">
+        <meta name="description" content="Internal Lectures on Zero-Knowledge Proving Systems at Distributed Lab">
         <meta name=”robots” content="index, follow">
 
         <!-- Twitter Meta Tags -->
@@ -25,14 +25,14 @@
         <meta property="og:site_name" content="ZKDL Camp">
         <meta name="twitter:creator" content="Distributed Lab">
         <meta name="twitter:title" content="ZKDL Camp">
-        <meta name="twitter:description" content="Internal Lectures on Zero-Knowledge Proving Systems conducted internally at Distributed Lab">
+        <meta name="twitter:description" content="Internal Lectures on Zero-Knowledge Proving Systems at Distributed Lab">
         <meta name="twitter:image" content="/images/preview.png">
 
         <!-- Facebook Meta Tags -->
         <meta property="og:url" content="https://zkdl-camp.github.io/" />
         <meta property="og:type" content="website">
         <meta property="og:title" content="ZKDL Camp" />
-        <meta property="og:description" content="Internal Lectures on Zero-Knowledge Proving Systems conducted internally at Distributed Lab" />
+        <meta property="og:description" content="Internal Lectures on Zero-Knowledge Proving Systems at Distributed Lab" />
         <meta property="og:image" content="/images/preview.png" />
         <meta property="og:locale" content="en_GB" />
         
@@ -49,7 +49,7 @@
         <div class="about-block">
             <h1 class="section-header"> About </h1>
             <p> 
-                <b>ZKDL Camp</b> is a series of internal lectures on Zero-Knowledge Proving Systems conducted internally at <a href = "https://distributedlab.com/" class="blue">Distributed Lab</a>. Here, we will understand "from scratch" how SNARKs (<i>Groth16</i>, <i>PLONK</i>), <i>STARK</i>, <i>Bulletproofs</i> (in the future, perhaps also Folding schemes) work.
+                <b>ZKDL Camp</b> is a series of internal lectures on Zero-Knowledge Proving Systems at <a href = "https://distributedlab.com/" class="blue">Distributed Lab</a>. Here, we will understand "from scratch" how SNARKs (<i>Groth16</i>, <i>PLONK</i>), <i>STARK</i>, <i>Bulletproofs</i> (in the future, perhaps also Folding schemes) work.
             </p>
             <p>
                 It is important that this course is designed for a full low-level understanding of these protocols and, accordingly, all the mathematics on which they are based. That is why the course covers not only zk itself and its application directly but also the basic level of mathematics needed to understand zk and cryptography in general.
@@ -60,25 +60,27 @@
         <div class="lectures-block">
             <h1 class="section-header"> Lectures </h1>
 
-            <!-- Lecture 1 -->
+            <!-- Lecture 4 -->
             <div class="lecture-card">
                 <div class="lecture-card-head">
                     <div class="lecture-card-preview">
-                        <img src="images/lecture-previews/lecture_1.png" class="preview">
+                        <img src="images/lecture-previews/lecture_4.png" class="preview">
                     </div>
                     <div class="lecture-card-content">
                         <div class="lecture-card-header">
-                            <h2 class="lecture-card-title"> Lecture 1: Mathematics for Cryptography I </h2>
+                            <h2 class="lecture-card-title"> Lecture 4: Projective Coordinates and Pairing </h2>
                             <p class="lecture-card-speaker"> <strong>Speaker:</strong> Dmytro Zakharov </p>
                         </div>
 
                         <div class="lecture-card-content">
                             <p class="lecture-card-description"> 
-                                <strong>Content.</strong> In this lecture, we will cover the basic mathematics required for understanding Zero-Knowledge Proving Systems. Here, we cover:
-                                <ul class="lecture-card-list">
-                                    <li> Basic Set Theory and Logic </li>
-                                    <li> Basic Group Theory </li>
-                                    <li> Fields. Finite Field Arithmetic. </li>
+                                <strong>Content.</strong> This lecture will touch the central part of SNARKs: elliptic curve pairing, its properties and applications. But first, we will cover projective coordinates and how they can be used to optimize elliptic curve operations. All in all, here we cover:
+                                <ul>
+                                    <li> Relations and equivalence classes. </li>
+                                    <li> Projective Coordinates. </li>
+                                    <li> Adding points in projective coordinates. Scalar multiplication. </li>
+                                    <li> Elliptic Curve Pairing. </li>
+                                    <li> Pairing applications. </li>
                                 </ul>
                             </p>
                         </div>    
@@ -89,22 +91,83 @@
                     <h1 class="lecture-links-header"> <strong> Lecture Material: </strong> </h1>
 
                     <div class="lecture-links-list">
-                        <a href="files/notes/1-math.pdf" class="lecture-link">
+                        <!-- <a href="files/notes/3-fields-and-ec.pdf" class="lecture-link">
                             <img src="images/icons/lecture_notes_icon.png">
                             <p class="link-name"> Lecture Notes </p>
-                        </a>
+                        </a> -->
 
-                        <a href="files/slides/1-math.pdf" class="lecture-link">
+                        <!-- <a href="files/slides/3-ec.pdf" class="lecture-link">
                             <img src="images/icons/slides_icon.png">
                             <p class="link-name"> Slides </p>
-                        </a>
+                        </a> -->
 
-                        <a href="files/exercises/1-math.pdf" class="lecture-link">
+                        <a href="files/exercises/4-pairing.pdf" class="lecture-link">
                             <img src="images/icons/test.png">
                             <p class="link-name"> Exercises </p>
                         </a>
 
-                        <a href="https://forms.gle/phHTR7YcYVUUchpF8" class="lecture-link">
+                        <!-- <a href="https://forms.gle/LiXaeXkzzHFyLvMX9" class="lecture-link">
+                            <img src="images/icons/google_form.png">
+                            <p class="link-name"> Test Form </p>
+                        </a> -->
+                    </div>
+
+                    <h1 class="lecture-links-header"> <strong> Other Helpful Resources: </strong> </h1>
+                    <ul>
+                        <li> <a href="https://static1.squarespace.com/static/5fdbb09f31d71c1227082339/t/5ff394720493bd28278889c6/1609798774687/PairingsForBeginners.pdf"> "Pairing for Beginners" </a> by Craig Costello: Not only this already mentioned book contains pairing inner working, but also a profound introduction into projective form of elliptic curves. </li>
+                        <li> <a href="https://toc.cryptobook.us/"> "A Graduate Course in Applied Cryptography" </a> by Dan Boneh and Victor Shoup, <strong>Section 15</strong> Recommended to read this chapter up to section 15.5 including. </li>
+                        <li> <a href="https://hackmd.io/@jpw/bn254"> "BN254 For The Rest of Us" </a> by Jonathan Wang: if you want specifics of pairing-friendly curve parameters, you can take a look here. This curve is currently widely used. </li>
+                        <li> <a href="https://eprint.iacr.org/2010/354.pdf"> High-Speed Software Implementation of the Optimal Ate Pairing over Barreto-Naehrig Curves </a> by Jean-Luc Beuchat et al.: if you <strong>really</strong> want to get into the details of pairing implementation, this paper is the best. It contains all the algorithms to implement pairing from scratch. </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Lecture 3 -->
+            <div class="lecture-card">
+                <div class="lecture-card-head">
+                    <div class="lecture-card-preview">
+                        <img src="images/lecture-previews/lecture_3.png" class="preview">
+                    </div>
+                    <div class="lecture-card-content">
+                        <div class="lecture-card-header">
+                            <h2 class="lecture-card-title"> Lecture 3: Finite Field Extensions and Elliptic Curves </h2>
+                            <p class="lecture-card-speaker"> <strong>Speaker:</strong> Dmytro Zakharov </p>
+                        </div>
+
+                        <div class="lecture-card-content">
+                            <p class="lecture-card-description"> 
+                                <strong>Content.</strong> Our primary focus will be on Finite Field Extensions, while also covering basics of Elliptic Curves. Here, we cover:
+                                <ul>
+                                    <li> Finite Field Extensions </li>
+                                    <li> Algebraic Closure </li>
+                                    <li> Elliptic Curve Definition </li>
+                                    <li> Discere Logarithm on Elliptic Curves </li>
+                                </ul>
+                            </p>
+                        </div>    
+                    </div>
+                </div>
+
+                <div class="lecture-links-section">
+                    <h1 class="lecture-links-header"> <strong> Lecture Material: </strong> </h1>
+
+                    <div class="lecture-links-list">
+                        <a href="files/notes/3-fields-and-ec.pdf" class="lecture-link">
+                            <img src="images/icons/lecture_notes_icon.png">
+                            <p class="link-name"> Lecture Notes </p>
+                        </a>
+
+                        <a href="files/slides/3-ec.pdf" class="lecture-link">
+                            <img src="images/icons/slides_icon.png">
+                            <p class="link-name"> Slides </p>
+                        </a>
+
+                        <a href="files/exercises/3-ec.pdf" class="lecture-link">
+                            <img src="images/icons/test.png">
+                            <p class="link-name"> Exercises </p>
+                        </a>
+
+                        <a href="https://forms.gle/LiXaeXkzzHFyLvMX9" class="lecture-link">
                             <img src="images/icons/google_form.png">
                             <p class="link-name"> Test Form </p>
                         </a>
@@ -112,9 +175,10 @@
 
                     <h1 class="lecture-links-header"> <strong> Other Helpful Resources: </strong> </h1>
                     <ul>
-                        <li> <a href="https://www.youtube.com/watch?v=j5nkkCp0ARw&list=PLVMgvCDIRy1y4JFpnpzEQZ0gRwr-sPTpw"> Michael Penn's "Abstract Algebra" Youtube Course </a>: one of the best explanations of Algebra I have seen with tons of examples. </li>
-                        <li> <a href="https://ocw.mit.edu/courses/18-703-modern-algebra-spring-2013/"> MIT Modern Algebra Class (18.703) </a>: Quite a rigorous course in Algebra, yet still easy-to-follow. </li>
-                        <li> <a href="https://www.youtube.com/watch?v=UwTQdOop-nU&list=PLwV-9DG53NDxU337smpTwm6sef4x-SCLv"> Visual Group Theory </a>: Very comprehensive list of lectures on Group Theory and Galois Theory with illustrations and many examples. </li>
+                        <li> <a href="https://www.math.uchicago.edu/~may/VIGRE/VIGRE2009/REUPapers/Moy.pdf"> An Introduction to the Theory of Field Extensions </a> by Samuel Moy: rigorous and "mathematicalish" introduction to what field extensions are. Highly recommended, but maybe too much for basic understanding of finite field extensions. </li>
+                        <li> <a href="http://tomlr.free.fr/Math%E9matiques/Math%20Complete/Cryptography/Guide%20to%20Elliptic%20Curve%20Cryptography%20-%20D.%20Hankerson,%20A.%20Menezes,%20S.%20Vanstone.pdf"> "Guide to Elliptic Curve Cryptography" </a> by Alfred Menezes et al.: Amazing book on Elliptic Curves optimizations. It also contains a great introduction into finite fields. </li>
+                        <li> <a href="https://static1.squarespace.com/static/5fdbb09f31d71c1227082339/t/5ff394720493bd28278889c6/1609798774687/PairingsForBeginners.pdf"> "Pairing for Beginners" </a> by Craig Costello: Quick dive into inner workings of elliptic curve pairing. </li>
+                        <li> <a href="https://toc.cryptobook.us/"> "A Graduate Course in Applied Cryptography" </a> by Dan Boneh and Victor Shoup, <strong>Section 15</strong> (Elliptic curve cryptography and pairings): Elliptic Curves are described very well together with the basics of pairing (without going into the details of construction). </li>
                     </ul>
                 </div>
             </div>
@@ -179,26 +243,25 @@
                 </div>
             </div>
 
-            <!-- Lecture 3 -->
+            <!-- Lecture 1 -->
             <div class="lecture-card">
                 <div class="lecture-card-head">
                     <div class="lecture-card-preview">
-                        <img src="images/lecture-previews/lecture_3.png" class="preview">
+                        <img src="images/lecture-previews/lecture_1.png" class="preview">
                     </div>
                     <div class="lecture-card-content">
                         <div class="lecture-card-header">
-                            <h2 class="lecture-card-title"> Lecture 3: Finite Field Extensions and Elliptic Curves </h2>
+                            <h2 class="lecture-card-title"> Lecture 1: Mathematics for Cryptography I </h2>
                             <p class="lecture-card-speaker"> <strong>Speaker:</strong> Dmytro Zakharov </p>
                         </div>
 
                         <div class="lecture-card-content">
                             <p class="lecture-card-description"> 
-                                <strong>Content.</strong> Our primary focus will be on Finite Field Extensions, while also covering basics of Elliptic Curves. Here, we cover:
-                                <ul>
-                                    <li> Finite Field Extensions </li>
-                                    <li> Algebraic Closure </li>
-                                    <li> Elliptic Curve Definition </li>
-                                    <li> Discere Logarithm on Elliptic Curves </li>
+                                <strong>Content.</strong> In this lecture, we will cover the basic mathematics required for understanding Zero-Knowledge Proving Systems. Here, we cover:
+                                <ul class="lecture-card-list">
+                                    <li> Basic Set Theory and Logic </li>
+                                    <li> Basic Group Theory </li>
+                                    <li> Fields. Finite Field Arithmetic. </li>
                                 </ul>
                             </p>
                         </div>    
@@ -209,22 +272,22 @@
                     <h1 class="lecture-links-header"> <strong> Lecture Material: </strong> </h1>
 
                     <div class="lecture-links-list">
-                        <a href="files/notes/3-fields-and-ec.pdf" class="lecture-link">
+                        <a href="files/notes/1-math.pdf" class="lecture-link">
                             <img src="images/icons/lecture_notes_icon.png">
                             <p class="link-name"> Lecture Notes </p>
                         </a>
 
-                        <!-- <a href="files/slides/2-math-and-crypto.pdf" class="lecture-link">
+                        <a href="files/slides/1-math.pdf" class="lecture-link">
                             <img src="images/icons/slides_icon.png">
                             <p class="link-name"> Slides </p>
-                        </a> -->
+                        </a>
 
-                        <a href="files/exercises/3-ec.pdf" class="lecture-link">
+                        <a href="files/exercises/1-math.pdf" class="lecture-link">
                             <img src="images/icons/test.png">
                             <p class="link-name"> Exercises </p>
                         </a>
 
-                        <a href="https://forms.gle/LiXaeXkzzHFyLvMX9" class="lecture-link">
+                        <a href="https://forms.gle/phHTR7YcYVUUchpF8" class="lecture-link">
                             <img src="images/icons/google_form.png">
                             <p class="link-name"> Test Form </p>
                         </a>
@@ -232,10 +295,9 @@
 
                     <h1 class="lecture-links-header"> <strong> Other Helpful Resources: </strong> </h1>
                     <ul>
-                        <li> <a href="https://www.math.uchicago.edu/~may/VIGRE/VIGRE2009/REUPapers/Moy.pdf"> An Introduction to the Theory of Field Extensions </a> by Samuel Moy: rigorous and "mathematicalish" introduction to what field extensions are. Highly recommended, but maybe too much for basic understanding of finite field extensions. </li>
-                        <li> <a href="http://tomlr.free.fr/Math%E9matiques/Math%20Complete/Cryptography/Guide%20to%20Elliptic%20Curve%20Cryptography%20-%20D.%20Hankerson,%20A.%20Menezes,%20S.%20Vanstone.pdf"> "Guide to Elliptic Curve Cryptography" </a> by Alfred Menezes et al.: Amazing book on Elliptic Curves optimizations. It also contains a great introduction into finite fields. </li>
-                        <li> <a href="https://static1.squarespace.com/static/5fdbb09f31d71c1227082339/t/5ff394720493bd28278889c6/1609798774687/PairingsForBeginners.pdf"> "Pairing for Beginners" </a> by Craig Costello: Quick dive into inner workings of elliptic curve pairing. </li>
-                        <li> <a href="https://toc.cryptobook.us/"> "A Graduate Course in Applied Cryptography" </a> by Dan Boneh and Victor Shoup, <strong>Section 15</strong> (Elliptic curve cryptography and pairings): Elliptic Curves are described very well together with the basics of pairing (without going into the details of construction). </li>
+                        <li> <a href="https://www.youtube.com/watch?v=j5nkkCp0ARw&list=PLVMgvCDIRy1y4JFpnpzEQZ0gRwr-sPTpw"> Michael Penn's "Abstract Algebra" Youtube Course </a>: one of the best explanations of Algebra I have seen with tons of examples. </li>
+                        <li> <a href="https://ocw.mit.edu/courses/18-703-modern-algebra-spring-2013/"> MIT Modern Algebra Class (18.703) </a>: Quite a rigorous course in Algebra, yet still easy-to-follow. </li>
+                        <li> <a href="https://www.youtube.com/watch?v=UwTQdOop-nU&list=PLwV-9DG53NDxU337smpTwm6sef4x-SCLv"> Visual Group Theory </a>: Very comprehensive list of lectures on Group Theory and Galois Theory with illustrations and many examples. </li>
                     </ul>
                 </div>
             </div>
