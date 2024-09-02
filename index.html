@@ -60,6 +60,65 @@
         <div class="lectures-block">
             <h1 class="section-header"> Lectures </h1>
 
+            <!-- Lecture 7 -->
+            <div class="lecture-card">
+                <div class="lecture-card-head">
+                    <div class="lecture-card-preview">
+                        <img src="images/lecture-previews/lecture_7.png" class="preview">
+                    </div>
+                    <div class="lecture-card-content">
+                        <div class="lecture-card-header">
+                            <h2 class="lecture-card-title"> Lecture 7: Sigma Protocols </h2>
+                            <p class="lecture-card-speaker"> <strong>Speaker:</strong> Dmytro Zakharov </p>
+                        </div>
+
+                        <div class="lecture-card-content">
+                            <p class="lecture-card-description"> 
+                                <strong>Content.</strong> Here, we will consider the most basic form of interactive proofs - Sigma Protocols. We will understand how to turn them into non-interactive proofs and how to use them in practice. Here, we cover:
+                                <ul>
+                                    <li> Schnorr Signature Scheme. </li>
+                                    <li> Sigma Protocols. </li>
+                                    <li> Examples of Sigma Protocols: Okamoto's and Chaum-Pedersen Protocols  </li>
+                                    <li> Combining Sigma Protocols. </li>
+                                </ul>
+                            </p>
+                        </div>    
+                    </div>
+                </div>
+
+                <div class="lecture-links-section">
+                    <h1 class="lecture-links-header"> <strong> Lecture Material: </strong> </h1>
+
+                    <div class="lecture-links-list">
+                        <a href="files/notes/7-sigma.pdf" class="lecture-link">
+                            <img src="images/icons/lecture_notes_icon.png">
+                            <p class="link-name"> Lecture Notes </p>
+                        </a>
+
+                        <!-- <a href="files/slides/6-intro-zk.pdf" class="lecture-link">
+                            <img src="images/icons/slides_icon.png">
+                            <p class="link-name"> Slides </p>
+                        </a> -->
+
+                        <a href="files/exercises/7-sigma.pdf" class="lecture-link">
+                            <img src="images/icons/test.png">
+                            <p class="link-name"> Exercises </p>
+                        </a>
+
+                        <!-- <a href="https://forms.gle/h3hrk4ug6B5LAgLs6" class="lecture-link">
+                            <img src="images/icons/google_form.png">
+                            <p class="link-name"> Test Form </p>
+                        </a> -->
+                    </div> 
+
+                    <h1 class="lecture-links-header"> <strong> Other Helpful Resources: </strong> </h1>
+                    <ul>
+                        <li> <a href="https://toc.cryptobook.us/"> "A Graduate Course in Applied Cryptography" </a> by Dan Boneh and Victor Shoup, <strong>Section 19</strong>: Very formalistic and rigorous introduction to Sigma Protocols and turning interactiveness to non-interactiveness in the subsequent <strong>Section 20</strong>. </li>
+                        <li> <a href="https://people.cs.georgetown.edu/jthaler/ProofsArgsAndZK.pdf"> "Proofs, Arguments, and Zero-Knowledge" </a> by Justin Thaler, <strong> Chapter 12 </strong>: quite rigorous description of Discrete Logarithm-based zero-knowledge protocols. </li>
+                    </ul>
+                </div>
+            </div>
+
             <!-- Lecture 6 -->
             <div class="lecture-card">
                 <div class="lecture-card-head">
@@ -116,7 +175,6 @@
                     <ul>
                         <li> <a href="https://zk-learning.org/"> "Zero Knowledge Proofs MOOC, Spring 2023" </a> Amazing series of lectures on zero-knowledge proofs. This lecture was primarily based on the first lecture by Shafi Goldwasser. </li>
                         <li> <a href="https://www.cs.princeton.edu/courses/archive/fall07/cos433/lec15.pdf"> "Zero Knowledge Proofs Lecture" </a> by Boaz Barak: very well-explained fundamentals of zero-knowledge proof with a detailed analysis of a quadratic residue interactive protocol. </li>
-                        <li> <a href="https://toc.cryptobook.us/"> "A Graduate Course in Applied Cryptography" </a> by Dan Boneh and Victor Shoup, <strong>Sections 19 and 20</strong> Very formalistic and rigorous introduction to Sigma Protocols and turning interactiveness to non-interactiveness. </li>
                     </ul>
                 </div>
             </div>
@@ -235,7 +293,7 @@
                     <h1 class="lecture-links-header"> <strong> Other Helpful Resources: </strong> </h1>
                     <ul>
                         <li> <a href="https://static1.squarespace.com/static/5fdbb09f31d71c1227082339/t/5ff394720493bd28278889c6/1609798774687/PairingsForBeginners.pdf"> "Pairing for Beginners" </a> by Craig Costello: Not only this already mentioned book contains pairing inner working, but also a profound introduction into projective form of elliptic curves. </li>
-                        <li> <a href="https://toc.cryptobook.us/"> "A Graduate Course in Applied Cryptography" </a> by Dan Boneh and Victor Shoup, <strong>Section 15</strong> Recommended to read this chapter up to section 15.5 including. </li>
+                        <li> <a href="https://toc.cryptobook.us/"> "A Graduate Course in Applied Cryptography" </a> by Dan Boneh and Victor Shoup, <strong>Section 15</strong>. Recommended to read this chapter up to section 15.5 including. </li>
                         <li> <a href="https://hackmd.io/@jpw/bn254"> "BN254 For The Rest of Us" </a> by Jonathan Wang: if you want specifics of pairing-friendly curve parameters, you can take a look here. This curve is currently widely used. </li>
                         <li> <a href="https://eprint.iacr.org/2010/354.pdf"> High-Speed Software Implementation of the Optimal Ate Pairing over Barreto-Naehrig Curves </a> by Jean-Luc Beuchat et al.: if you <strong>really</strong> want to get into the details of pairing implementation, this paper is the best. It contains all the algorithms to implement pairing from scratch. </li>
                     </ul>
@@ -358,7 +416,7 @@
                     <h1 class="lecture-links-header"> <strong> Other Helpful Resources: </strong> </h1>
                     <ul>
                         <li> <a href="https://toc.cryptobook.us/"> "A Graduate Course in Applied Cryptography" </a> by Dan Boneh and Victor Shoup, <strong>Section 2</strong> (Encryption): This book can give a fundamental understanding of system security analysis and cryptography formalism. In particular, check <i>Section 2</i> for introduction to security definitions. </li>
-                        <li> <a href="https://doi.org/10.1137%2F0108018"> Reed, Irving S.; Solomon, Gustave (1960), Polynomial Codes over Certain Finite Fields </a>: Original Paper on Reed-Solomon Error Correction</li>
+                        <li> <a href="https://doi.org/10.1137%2F0108018"> Reed, Irving S.; Solomon, Gustave (1960), Polynomial Codes over Certain Finite Fields </a>: Original Paper on Reed-Solomon Error Correction. </li>
                     </ul>
                 </div>
             </div>
