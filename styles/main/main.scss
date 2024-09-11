@@ -31,7 +31,7 @@
 }
 
 // About body
-.about-block {
+.about-block, .summary-block {
     margin: 0 20% 0 20%;
     font-size: 1.2em;
     text-align: justify;
@@ -40,6 +40,20 @@
         padding: 0;
         margin: 20px;
         text-indent: 25px;
+    }
+
+    .summary-list {
+        // Making more sparse
+        row-gap: 10px;
+        column-gap: 10px;
+
+        display: grid;
+
+        // Making larger font for ul elements
+
+        li {
+            font-size: 1.1em;
+        }
     }
 }
 

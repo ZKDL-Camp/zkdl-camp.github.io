@@ -24,15 +24,24 @@
   -webkit-text-fill-color: transparent;
 }
 
-.about-block {
+.about-block, .summary-block {
   margin: 0 20% 0 20%;
   font-size: 1.2em;
   text-align: justify;
 }
-.about-block p {
+.about-block p, .summary-block p {
   padding: 0;
   margin: 20px;
   text-indent: 25px;
+}
+.about-block .summary-list, .summary-block .summary-list {
+  row-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  display: grid;
+}
+.about-block .summary-list li, .summary-block .summary-list li {
+  font-size: 1.1em;
 }
 
 .lectures-block {
