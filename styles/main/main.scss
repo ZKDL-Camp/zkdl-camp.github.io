@@ -42,18 +42,46 @@
         text-indent: 25px;
     }
 
-    .summary-list {
-        // Making more sparse
-        row-gap: 10px;
-        column-gap: 10px;
-
-        display: grid;
-
-        // Making larger font for ul elements
-
-        li {
-            font-size: 1.1em;
-        }
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+        font-family: Arial, sans-serif;
+    }
+    // Book container
+    .book-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        max-width: 320px;
+        margin: auto;
+    }
+    .book-cover {
+        width: 300px;
+        height: auto;
+        border-radius: 5px;
+    }
+    .button-container {
+        margin-top: 15px;
+    }
+    .open-book-button {
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+        text-align: center;
+    }
+    .open-book-button:hover {
+        background-color: #0056b3;
     }
 }
 
@@ -220,6 +248,42 @@
     // About Section
     .about-block {
         margin: 0 5% 0 5%; // Making margin smaller
+    }
+
+    .summary-block {
+        // Book container
+        .book-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 83%;
+            margin: auto;
+        }
+        .book-cover {
+            width: 80%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .button-container {
+            margin-top: 15px;
+        }
+        .open-book-button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            text-align: center;
+        }
+        .open-book-button:hover {
+            background-color: #0056b3;
+        }
     }
 
     // Lectures Section
