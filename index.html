@@ -50,10 +50,10 @@
             <h1 class="section-header"> About </h1>
 
             <p>
-                <b> ZKDL Camp </b> is a series of lectures (in the future, possibly seminars) on zero-knowledge, conducted at <a href="https://distributedlab.com/">Distributed Lab</a>, in which we will understand "from scratch" how <i>zk-SNARKs</i> such as <i>Groth16</i> or <i>Pinocchio</i> and <i>zk-STARK</i> work, including all the components they rely on.
+                <b> ZKDL Camp </b> is a series of lectures on zero-knowledge (ZK) proofs, conducted at <a href="https://distributedlab.com/">Distributed Lab</a>, in which we explore "from scratch" how modern <i>zk-SNARKs</i> such as <i>Groth16</i>, <i>PlonK</i>, <i>GKR</i> work, including all the mathematical components they rely on.
             </p>  
             <p>  
-                Note that this course is designed for a full low-level understanding of these protocols and, accordingly, all the mathematics on which they are based. That is why the course covers not only zk itself and its application directly but also the basic mathematics level needed to understand zk and cryptography in general.
+                Note that this course is designed for a full low-level understanding of these protocols and, accordingly, all the mathematics on which they are based. That is why the course covers not only ZK theory itself and its applications, but also the basic mathematics level needed to understand ZK and cryptography in general.
             </p>
         </div>
 
@@ -66,7 +66,7 @@
                 active development, and we are looking forward to your feedback
                 on it. If you want to contribute, visit our <a
                 href="https://github.com/ZKDL-Camp/lectures-tex">GitHub
-                Repository</a> and leave your comments or pull requests there.
+                Repository</a> and leave your comments or pull requests.
             </p>
             
             <div class="book-container">
@@ -81,26 +81,173 @@
         <div class="lectures-block">
             <h1 class="section-header"> Lectures </h1>
 
-            <!-- Lecture 14 -->
+            <!-- Lecture 17 -->
             <div class="lecture-card">
                 <div class="lecture-card-head">
                     <div class="lecture-card-preview">
-                        <img src="images/lecture-previews/lecture_14.png" class="preview">
+                        <img src="images/lecture-previews/lecture_18.png" class="preview">
                     </div>
                     <div class="lecture-card-content">
                         <div class="lecture-card-header">
-                            <h2 class="lecture-card-title"> Lecture 14: Gentle Introduction to zk-STARKs </h2>
-                            <p class="lecture-card-speaker"> <strong>Speaker:</strong> Oleg Fomenko </p>
+                            <h2 class="lecture-card-title"> Lecture 17: UltraGroth </h2>
+                            <p class="lecture-card-speaker"> <strong>Speaker:</strong> Dmytro Zakharov </p>
+                        </div>
+
+                        <div class="lecture-card-content">
+                            <p class="lecture-card-description">
+                                <strong>Content.</strong> Embedding lookup checks 
+                                into Groth16 is unfortunately currently impossible. 
+                                UltraGroth is a protocol designed to insignificantly 
+                                modify Groth16 to introduce lookup checks that
+                                optimize arithmetical circuits written over R1CS. In 
+                                this lecture, we consider the construction of UltraGroth,
+                                how to build interactive protocol over multi-round QAP, and efficiency 
+                                of such construction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lecture-links-section">
+                    <h1 class="lecture-links-header"> <strong> Lecture Material: </strong> </h1>
+
+                    <div class="lecture-links-list">
+                        <a href="https://hackmd.io/@ZamDimon/SkFGEXbKgx" class="lecture-link">
+                            <img src="images/icons/hackmd.png">
+                            <p class="link-name"> Lecture Notes </p>
+                        </a>
+
+                        <a href="files/slides/18-ultragroth-informal.pdf" class="lecture-link">
+                            <img src="images/icons/slides_icon.png">
+                            <p class="link-name"> High-level Overview </p>
+                        </a>
+
+                        <a href="files/slides/18-ultragroth-formal.pdf" class="lecture-link">
+                            <img src="images/icons/slides_icon.png">
+                            <p class="link-name"> Technical Slides </p>
+                        </a>
+                    </div>
+
+                    <h1 class="lecture-links-header"> <strong> Other Helpful Resources: </strong> </h1>
+                    <ul>
+                        <li> <a href="https://hackmd.io/@Merlin404/Hy_O2Gi-h"> "UltraGroth" </a> by Lev Soukhanov: original blog on UltraGroth construction. </li>
+                        <li> <a href="https://mirror.xyz/0x90699B5A52BccbdFe73d5c9F3d039a33fb2D1AF6/T4lHiBlo7VoYp-5SEuitQnY7_ullpwkZbanOOwjeZI4"> "Implementing Lookups in Groth: The second ingredient to reduce Bionetta’s constraints" </a> by Illia Dovhopolyi, Artem Sdobnov, Dmytro Zakharov: application of UltraGroth to zero-knowledge Machine Learning (zkML) problem. </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Lecture 16 -->
+            <div class="lecture-card">
+                <div class="lecture-card-head">
+                    <div class="lecture-card-preview">
+                        <img src="images/lecture-previews/lecture_17.png" class="preview">
+                    </div>
+                    <div class="lecture-card-content">
+                        <div class="lecture-card-header">
+                            <h2 class="lecture-card-title"> Lecture 16: Lookup Tables </h2>
+                            <p class="lecture-card-speaker"> <strong>Speaker:</strong> Dmytro Zakharov </p>
                         </div>
 
                         <div class="lecture-card-content">
                             <p class="lecture-card-description">
                                 <strong>Content.</strong> This lecture introduces 
-                                the zk-STARK protocol description. As the name suggests,
-                                this lecture overlines the main building blocks of zk-STARKs
-                                based on square Fibonacci sequence example.
-                                <br>
-                                * <i>credits to <a href="https://aszepieniec.github.io/stark-anatomy/fri.html">this source</a> for the preview image.</i>
+                                a powerful tool to reduce the number of constraints 
+                                in the arithmetical circuits representing complex 
+                                non-native logic in the given zero-knowledge protocol. We 
+                                consider two widely used lookup protocols: plookup and 
+                                logup.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lecture-links-section">
+                    <h1 class="lecture-links-header"> <strong> Lecture Material: </strong> </h1>
+
+                    <div class="lecture-links-list">
+                        <a href="files/notes/17-lookups.pdf" class="lecture-link">
+                            <img src="images/icons/lecture_notes_icon.png">
+                            <p class="link-name"> Lecture Notes </p>
+                        </a>
+
+                        <a href="files/slides/17-lookups.pdf" class="lecture-link">
+                            <img src="images/icons/slides_icon.png">
+                            <p class="link-name"> Slides </p>
+                        </a>
+                    </div>
+
+                    <h1 class="lecture-links-header"> <strong> Other Helpful Resources: </strong> </h1>
+                    <ul>
+                        <li> <a href="https://eprint.iacr.org/2020/315"> "plookup: A simplified polynomial protocol for lookup tables" </a> by Ariel Gabizon and Zachary J. Williamson: Original plookup paper. </li>
+                        <li> <a href="https://hackmd.io/@relgabizon/ByFgSDA7D"> "Multiset checks in PLONK and Plookup" </a> by Ariel Gabizon: simplified explanation of plookup protocol from its author. </li>
+                        <li> <a href="https://eprint.iacr.org/2022/1530.pdf"> "Multivariate lookups based on logarithmic derivatives" </a> by Ulrich Habock: Original Logup paper. </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Lecture 15 -->
+            <div class="lecture-card">
+                <div class="lecture-card-head">
+                    <div class="lecture-card-preview">
+                        <img src="images/lecture-previews/lecture_16.png" class="preview">
+                    </div>
+                    <div class="lecture-card-content">
+                        <div class="lecture-card-header">
+                            <h2 class="lecture-card-title"> Lecture 15: GKR and Offline Memory Checking </h2>
+                            <p class="lecture-card-speaker"> <strong>Speakers:</strong> Dmytro Zakharov and Anton Levochko </p>
+                        </div>
+
+                        <div class="lecture-card-content">
+                            <p class="lecture-card-description">
+                                <strong>Content.</strong> This lecture introduces 
+                                the first application of Sum-Check protocol for 
+                                building SNARK over Circuit Satisfability problem. 
+                                Additionally, we specify how Sum-Check is 
+                                used for Offline Memory Checking problem.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lecture-links-section">
+                    <h1 class="lecture-links-header"> <strong> Lecture Material: </strong> </h1>
+
+                    <div class="lecture-links-list">
+                        <a href="files/notes/16-gkr.pdf" class="lecture-link">
+                            <img src="images/icons/lecture_notes_icon.png">
+                            <p class="link-name"> Lecture Notes </p>
+                        </a>
+
+                        <a href="files/slides/16-gkr.pdf" class="lecture-link">
+                            <img src="images/icons/slides_icon.png">
+                            <p class="link-name"> Slides </p>
+                        </a>
+                    </div>
+
+                    <h1 class="lecture-links-header"> <strong> Other Helpful Resources: </strong> </h1>
+                    <ul>
+                        <li> <a href="https://www.microsoft.com/en-us/research/wp-content/uploads/2016/12/2008-DelegatingComputation.pdf"> "Delegating Computation: Interactive Proofs for Muggles" </a> by Shafi Goldwasser, Yael Tauman Kalai, and Guy N. Rothblum: original GKR paper. </li>
+                        <li> <a href="https://people.cs.georgetown.edu/jthaler/GKRNote.pdf"> "A Note on the GKR Protocol" </a> by Justin Thaler: Simplification of original GKR interactive proof for circuit evaluation. </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Lecture 14 -->
+            <div class="lecture-card">
+                <div class="lecture-card-head">
+                    <div class="lecture-card-preview">
+                        <img src="images/lecture-previews/lecture_15.png" class="preview">
+                    </div>
+                    <div class="lecture-card-content">
+                        <div class="lecture-card-header">
+                            <h2 class="lecture-card-title"> Lecture 14: Sum-Check Protocol </h2>
+                            <p class="lecture-card-speaker"> <strong>Speaker:</strong> Dmytro Zakharov </p>
+                        </div>
+
+                        <div class="lecture-card-content">
+                            <p class="lecture-card-description">
+                                <strong>Content.</strong> This lecture introduces 
+                                Sum-Check protocol which is a cornerstone of many modern 
+                                zk-SNARKs. Additionally, we introduce the notion of 
+                                multilinear polynomials and how to encode certain problems 
+                                into the multilinear form.
                             </p>
                         </div>
                     </div>
@@ -110,12 +257,12 @@
                     <h1 class="lecture-links-header"> <strong> Lecture Material: </strong> </h1>
 
                     <div class="lecture-links-list">
-                        <a href="files/notes/14-stark.pdf" class="lecture-link">
+                        <a href="files/notes/15-sum-check.pdf" class="lecture-link">
                             <img src="images/icons/lecture_notes_icon.png">
                             <p class="link-name"> Lecture Notes </p>
                         </a>
 
-                        <a href="files/slides/14-stark.pdf" class="lecture-link">
+                        <a href="files/slides/15-sumcheck.pdf" class="lecture-link">
                             <img src="images/icons/slides_icon.png">
                             <p class="link-name"> Slides </p>
                         </a>
@@ -123,11 +270,8 @@
 
                     <h1 class="lecture-links-header"> <strong> Other Helpful Resources: </strong> </h1>
                     <ul>
-                        <li> <a href="https://eprint.iacr.org/2021/582.pdf"> "ethSTARK Documentation" </a> by StarkWare Team: definition of the STARK protocol used by StarkWare. </li>
-                        <li> <a href="https://vitalik.eth.limo/general/2017/11/09/starks_part_1.html"> "STARKs, Part I: Proofs with Polynomial" </a> by Vitalik Buterin. </li>
-                        <li> <a href="https://vitalik.eth.limo/general/2017/11/22/starks_part_2.html"> "STARKs, Part II: Thank Goodness It's FRI-day" </a> by Vitalik Buterin. </li>
-                        <li> <a href="https://vitalik.eth.limo/general/2018/07/21/starks_part_3.html"> "STARKs, Part 3: Into the Weeds" </a> by Vitalik Buterin. </li>
-                        <li> <a href="https://starkware.co/stark-101/"> "STARK-101" </a> course by StarkWare: A series of lectures with coding examples on how STARK is built in practice. </li>
+                        <li> <a href="https://people.cs.georgetown.edu/jthaler/ProofsArgsAndZK.html"> "Proofs, Arguments, and Zero-Knowledge" </a> by Justin Thaler: Book with a comprehensive description of Sum-Check protocols, its modifications, and applications. </li>
+                        <li> <a href="https://www.youtube.com/watch?v=4018OYyoAf8"> "ZKP MOOC Lecture 4: Interactive Proofs" </a> by Justin Thaler: Lecture on Interactive Protocols and, in particular, Sum-Check protocol. </li>
                     </ul>
                 </div>
             </div>
